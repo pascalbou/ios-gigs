@@ -16,6 +16,7 @@
 		3FD370E6241DA6DA00362590 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E5241DA6DA00362590 /* LoginViewController.swift */; };
 		3FD370E8241DA7F700362590 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E7241DA7F700362590 /* Bearer.swift */; };
 		3FD370EA241DA82E00362590 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E9241DA82E00362590 /* User.swift */; };
+		3FD370EC241DA86900362590 /* GigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370EB241DA86900362590 /* GigController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3FD370E5241DA6DA00362590 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD370E7241DA7F700362590 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		3FD370E9241DA82E00362590 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3FD370EB241DA86900362590 /* GigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
 				3FD370E7241DA7F700362590 /* Bearer.swift */,
 				3FD370E9241DA82E00362590 /* User.swift */,
+				3FD370EB241DA86900362590 /* GigController.swift */,
 				3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */,
 			);
 			path = Gigs;
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD370E8241DA7F700362590 /* Bearer.swift in Sources */,
+				3FD370EC241DA86900362590 /* GigController.swift in Sources */,
 				3FD370E6241DA6DA00362590 /* LoginViewController.swift in Sources */,
 				3FD370EA241DA82E00362590 /* User.swift in Sources */,
 				3FD370D0241DA47000362590 /* AppDelegate.swift in Sources */,
