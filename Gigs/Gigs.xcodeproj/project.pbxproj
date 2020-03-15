@@ -14,6 +14,8 @@
 		3FD370DC241DA47400362590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD370DA241DA47400362590 /* LaunchScreen.storyboard */; };
 		3FD370E4241DA4FB00362590 /* GigsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */; };
 		3FD370E6241DA6DA00362590 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E5241DA6DA00362590 /* LoginViewController.swift */; };
+		3FD370E8241DA7F700362590 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E7241DA7F700362590 /* Bearer.swift */; };
+		3FD370EA241DA82E00362590 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370E9241DA82E00362590 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3FD370DD241DA47400362590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsTableViewController.swift; sourceTree = "<group>"; };
 		3FD370E5241DA6DA00362590 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD370E7241DA7F700362590 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		3FD370E9241DA82E00362590 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				3FD370DD241DA47400362590 /* Info.plist */,
 				3FD370D5241DA47000362590 /* Main.storyboard */,
 				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
+				3FD370E7241DA7F700362590 /* Bearer.swift */,
+				3FD370E9241DA82E00362590 /* User.swift */,
 				3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */,
 			);
 			path = Gigs;
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD370E8241DA7F700362590 /* Bearer.swift in Sources */,
 				3FD370E6241DA6DA00362590 /* LoginViewController.swift in Sources */,
+				3FD370EA241DA82E00362590 /* User.swift in Sources */,
 				3FD370D0241DA47000362590 /* AppDelegate.swift in Sources */,
 				3FD370D2241DA47000362590 /* SceneDelegate.swift in Sources */,
 				3FD370E4241DA4FB00362590 /* GigsTableViewController.swift in Sources */,
