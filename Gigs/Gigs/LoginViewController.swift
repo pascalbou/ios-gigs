@@ -25,48 +25,60 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func logInTypeChanged(_ sender: UISegmentedControl) {
-        
-        guard let gigController = gigController else { return }
-                
-        if let username = usernameTextField.text,
-            !username.isEmpty,
-            let password = passwordTextField.text,
-            !password.isEmpty {
-            
-            let user = User(username: username, password: password)
-            
-            if loginType == .signUp {
-                gigController.signUp(with: user) { (error) in
-                    if let error = error {
-                        NSLog("Error occured during sign up: \(error)")
-                    } else {
-                        DispatchQueue.main.async {
-                            let alertController = UIAlertController(title: "Sign Up Successful", message: "Now please log in.", preferredStyle: .alert)
-                            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                            alertController.addAction(alertAction)
-                            self.present(alertController, animated: true) {
-                                self.loginType = .logIn
-                                self.logInSegmentedControl.selectedSegmentIndex = 1
-                                self.logInButton.setTitle("Log In", for: .normal)
-                            }
-                        }
-                    }
-                }
-            } else {
-                gigController.logIn(with: user) { (error) in
-                    if let error = error {
-                        NSLog("Error occured during sign up: \(error)")
-                    } else {
-                        DispatchQueue.main.async {
-                            self.dismiss(animated: true, completion: nil)
-                        }
-                    }
-                }
-            }
-        }
+         if sender.selectedSegmentIndex == 0 {
+             loginType = .signUp
+             logInButton.setTitle("Sign Up", for: .normal)
+         } else {
+             loginType = .logIn
+             logInButton.setTitle("Log In", for: .normal)
+         }
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        print("button tapped")
+        
+         guard let gigController = gigController else { return }
+                 
+         if let username = usernameTextField.text,
+             !username.isEmpty,
+             let password = passwordTextField.text,
+             !password.isEmpty {
+             
+             print("it works 1")
+             let user = User(username: username, password: password)
+             
+             if loginType == .signUp {
+                print("it works 2")
+                gigController.signUp(with: user) { (error) in
+                    if let error = error {
+                         NSLog("Error occured during sign up: \(error)")
+                     } else {
+                         print("test")
+                         DispatchQueue.main.async {
+                             let alertController = UIAlertController(title: "Sign Up Successful", message: "Now please log in.", preferredStyle: .alert)
+                             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                             alertController.addAction(alertAction)
+                             self.present(alertController, animated: true) {
+                                 self.loginType = .logIn
+                                 self.logInSegmentedControl.selectedSegmentIndex = 1
+                                 self.logInButton.setTitle("Log In", for: .normal)
+                             }
+                         }
+                     }
+                 }
+             } else {
+                 gigController.logIn(with: user) { (error) in
+                     if let error = error {
+                         NSLog("Error occured during sign up: \(error)")
+                     } else {
+                         DispatchQueue.main.async {
+                             self.dismiss(animated: true, completion: nil)
+                         }
+                     }
+                 }
+             }
+         }
     }
     
     

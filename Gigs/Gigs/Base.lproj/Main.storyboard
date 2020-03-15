@@ -29,14 +29,13 @@
                                     <segment title="Log In"/>
                                 </segments>
                                 <connections>
-                                    <action selector="logInTapped:" destination="Wxp-ts-HQt" eventType="valueChanged" id="WnT-9G-38g"/>
-                                    <action selector="logInTypeChanged:" destination="Wxp-ts-HQt" eventType="valueChanged" id="WqL-OQ-0Gm"/>
+                                    <action selector="logInTypeChanged:" destination="Wxp-ts-HQt" eventType="valueChanged" id="txJ-0g-nmg"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-6u-JMN">
-                                <rect key="frame" x="186" y="339" width="42" height="30"/>
+                                <rect key="frame" x="180" y="339" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="Wxp-ts-HQt" eventType="touchUpInside" id="SWZ-0y-ku7"/>
                                 </connections>
