@@ -70,9 +70,9 @@
 				3FD370DA241DA47400362590 /* LaunchScreen.storyboard */,
 				3FD370DD241DA47400362590 /* Info.plist */,
 				3FD370D5241DA47000362590 /* Main.storyboard */,
-				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
 				3FD370E7241DA7F700362590 /* Bearer.swift */,
 				3FD370E9241DA82E00362590 /* User.swift */,
+				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
 				3FD370EB241DA86900362590 /* GigController.swift */,
 				3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */,
 			);

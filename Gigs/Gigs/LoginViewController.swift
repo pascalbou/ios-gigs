@@ -8,8 +8,15 @@
 
 import UIKit
 
+enum LoginType {
+    case signUp
+    case logIn
+}
+
 class LoginViewController: UIViewController {
     
+    var gigController: GigController?
+    var loginType = LoginType.signUp
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -18,7 +25,47 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func logInTypeChanged(_ sender: UISegmentedControl) {
+        
+        guard let gigController = gigController else { return }
+                
+        if let username = usernameTextField.text,
+            !username.isEmpty,
+            let password = passwordTextField.text,
+            !password.isEmpty {
+            
+            let user = User(username: username, password: password)
+            
+            if loginType == .signUp {
+                gigController.signUp(with: user) { (error) in
+                    if let error = error {
+                        NSLog("Error occured during sign up: \(error)")
+                    } else {
+                        DispatchQueue.main.async {
+                            let alertController = UIAlertController(title: "Sign Up Successful", message: "Now please log in.", preferredStyle: .alert)
+                            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                            alertController.addAction(alertAction)
+                            self.present(alertController, animated: true) {
+                                self.loginType = .logIn
+                                self.logInSegmentedControl.selectedSegmentIndex = 1
+                                self.logInButton.setTitle("Log In", for: .normal)
+                            }
+                        }
+                    }
+                }
+            } else {
+                gigController.logIn(with: user) { (error) in
+                    if let error = error {
+                        NSLog("Error occured during sign up: \(error)")
+                    } else {
+                        DispatchQueue.main.async {
+                            self.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                }
+            }
+        }
     }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
     }
     
