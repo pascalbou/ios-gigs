@@ -103,7 +103,13 @@
                             <outlet property="delegate" destination="7Dj-fT-Bsu" id="pEo-ci-6Xy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jSb-1v-e6f"/>
+                    <navigationItem key="navigationItem" id="jSb-1v-e6f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a4x-F9-VvI">
+                            <connections>
+                                <segue destination="ogu-tN-aDp" kind="show" identifier="AddGigSegue" id="AW2-6s-KIV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Wxp-ts-HQt" kind="presentation" identifier="LoginViewModalSegue" modalPresentationStyle="fullScreen" id="ryt-p0-24K"/>
                     </connections>
@@ -178,27 +184,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MD-Ar-H4j">
-                                <rect key="frame" x="0.0" y="798" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="365-Xg-bfr">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ah9-4s-ARw">
-                                            <connections>
-                                                <action selector="saveButton:" destination="ogu-tN-aDp" id="9gQ-hv-MyO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kOc-qU-yPG"/>
                     </view>
                     <navigationItem key="navigationItem" id="o1r-Oy-Koy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fLQ-Ax-vg3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ah9-4s-ARw">
                             <connections>
-                                <segue destination="ogu-tN-aDp" kind="show" identifier="AddGigSegue" id="Cti-RQ-0KW"/>
+                                <action selector="saveButton:" destination="ogu-tN-aDp" id="9gQ-hv-MyO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -213,4 +206,7 @@
             <point key="canvasLocation" x="1298.5507246376812" y="452.00892857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AW2-6s-KIV"/>
+    </inferredMetricsTieBreakers>
 </document>
