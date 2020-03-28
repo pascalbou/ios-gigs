@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7AE4DD241EE4BB0002B17C /* GigDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7AE4DC241EE4BB0002B17C /* GigDetailViewController.swift */; };
+		3F7AE4E1241EE7010002B17C /* Gig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7AE4E0241EE7010002B17C /* Gig.swift */; };
 		3FD370D0241DA47000362590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370CF241DA47000362590 /* AppDelegate.swift */; };
 		3FD370D2241DA47000362590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD370D1241DA47000362590 /* SceneDelegate.swift */; };
 		3FD370D7241DA47000362590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD370D5241DA47000362590 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7AE4DC241EE4BB0002B17C /* GigDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigDetailViewController.swift; sourceTree = "<group>"; };
+		3F7AE4E0241EE7010002B17C /* Gig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gig.swift; sourceTree = "<group>"; };
 		3FD370CC241DA47000362590 /* Gigs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD370CF241DA47000362590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD370D1241DA47000362590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,11 +74,13 @@
 				3FD370DA241DA47400362590 /* LaunchScreen.storyboard */,
 				3FD370DD241DA47400362590 /* Info.plist */,
 				3FD370D5241DA47000362590 /* Main.storyboard */,
+				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
+				3F7AE4DC241EE4BB0002B17C /* GigDetailViewController.swift */,
+				3F7AE4E0241EE7010002B17C /* Gig.swift */,
+				3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */,
 				3FD370E7241DA7F700362590 /* Bearer.swift */,
 				3FD370E9241DA82E00362590 /* User.swift */,
-				3FD370E5241DA6DA00362590 /* LoginViewController.swift */,
 				3FD370EB241DA86900362590 /* GigController.swift */,
-				3FD370E3241DA4FB00362590 /* GigsTableViewController.swift */,
 			);
 			path = Gigs;
 			sourceTree = "<group>";
@@ -151,12 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD370E8241DA7F700362590 /* Bearer.swift in Sources */,
+				3F7AE4DD241EE4BB0002B17C /* GigDetailViewController.swift in Sources */,
 				3FD370EC241DA86900362590 /* GigController.swift in Sources */,
 				3FD370E6241DA6DA00362590 /* LoginViewController.swift in Sources */,
 				3FD370EA241DA82E00362590 /* User.swift in Sources */,
 				3FD370D0241DA47000362590 /* AppDelegate.swift in Sources */,
 				3FD370D2241DA47000362590 /* SceneDelegate.swift in Sources */,
 				3FD370E4241DA4FB00362590 /* GigsTableViewController.swift in Sources */,
+				3F7AE4E1241EE7010002B17C /* Gig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
